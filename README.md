@@ -19,3 +19,7 @@ Memory limited without swap
 docker exec -it sql1 "bash"
 # Set up the experiment with TPCDS
 
+将.sql文件导入数据库
+
+sqlcmd -S 'your server name' -U 'user name of server' -P 'password of server' -d 'db name'-i script.sql
+
