@@ -22,4 +22,6 @@ docker exec -it sql1 "bash"
 将.sql文件导入数据库
 
 sqlcmd -S 'your server name' -U 'user name of server' -P 'password of server' -d 'db name'-i script.sql
+在 docker中使用数据库SQL命令：
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>'
 
